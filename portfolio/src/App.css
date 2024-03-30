@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#particles canvas {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.primary-color {
+  background-image: linear-gradient(to right, #994ecc, #3e187a);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.blob {
+  box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
