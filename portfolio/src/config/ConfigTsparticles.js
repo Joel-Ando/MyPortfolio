@@ -35,16 +35,16 @@ const ParticlesComponent = (props) => {
           value: "#000",
         },
         image: "",
-        position: "",
-        repeat: "",
-        size: "",
+        position: "center",
+        repeat: "no-repeat",
+        size: "cover",
         opacity: 1,
       },
       backgroundMask: {
         composite: "destination-out",
         cover: {
           color: {
-            value: "#fff",
+            value: "#000",
           },
           opacity: 1,
         },

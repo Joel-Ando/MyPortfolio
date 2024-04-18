@@ -1,13 +1,26 @@
 import React from "react";
 import ComputerImg from "./../../Assets/computerImg.jpg";
+import { motion } from "framer-motion";
 
 function About() {
   return (
-    <div className="py-10 text-white bg-[#232325] h-auto id='about' font-oxanium">
+    <div
+      className="py-10 text-white bg-[#232325] h-auto overflow-hidden font-oxanium"
+      id="about"
+    >
       <div className="flex sm:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
         <div>
           <div className="w-[400px] h-full">
-            <img
+            <motion.img
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.15,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
               src={ComputerImg}
               alt="computerImg"
               className="object-cover rounded-xl h-[300px] filter grayscale brightness-50"
@@ -16,7 +29,18 @@ function About() {
         </div>
         <div>
           <div className="p-2">
-            <div className="text-gray-300 my-3">
+            <motion.div
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.25,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 0.2 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+              className="text-gray-300 my-3"
+            >
               <h3 className="text-4xl font-semibold mb-5">
                 About <span className="primary-color">Me</span>
               </h3>
@@ -35,7 +59,7 @@ function About() {
                 in my interests in fitness, dancing, music, and adventure. Let's
                 connect and build something awesome together! 🚀
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
