@@ -21,30 +21,6 @@
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
-/* scroll to top button 
-.scroll-top-btn {
-  position: fixed;
-  color: #994ecc;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 50%;
-  z-index: 2000;
-  font-size: 50px;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-
-.scroll-top-btn.visible {
-  opacity: 0.5;
-  animation: none;
-}
-.scroll-top-btn:hover {
-  opacity: 1;
-}
-.scroll-top-btn.invisible {
-  opacity: 0;
-}*/
-
 /* orbit container */
 .orbit {
   list-style-type: none;

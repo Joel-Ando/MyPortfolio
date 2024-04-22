@@ -32,7 +32,7 @@ const BackToTopbtn = () => {
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: showButton ? 1 : 0, scale: showButton ? 1 : 0 }}
       transition={{ duration: 0.3 }}
-      className="fixed bottom-5 right-5 text-4xl cursor-pointer text-purple-600"
+      className="fixed bottom-5 right-5 text-4xl cursor-pointer text-purple-900 hover:text-purple-600"
       onClick={scrollToTop}
     >
       <AiFillUpCircle />

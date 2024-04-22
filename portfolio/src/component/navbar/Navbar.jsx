@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import logo from "./../../img/logo.jpeg";
 
 function Navbar() {
   const [nav, setnav] = useState(false);
@@ -17,8 +16,9 @@ function Navbar() {
 
   return (
     <div className="text-gray-300 font-oxanium hover:cursor-pointer flex justify-between items-center max-w-[1240px] mx-auto h-20 px-4 text-1">
-      <img src={logo} alt="logo" className="h-25 w-20 ml-5 " />
-      {/* <h1 className="ml-5">Joelwanneh</h1> */}
+      <h1 className="ml-5 text-4xl font-semibold">
+        JW<span className="primary-color text-5xl">.</span>
+      </h1>
       <ul className="hidden md:flex ">
         <li className="p-5 hover:text-purple-500">Home</li>
         <li
@@ -50,6 +50,7 @@ function Navbar() {
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
+      {/* hamburger menu */}
       <div
         className={
           nav
