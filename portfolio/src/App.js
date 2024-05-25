@@ -6,7 +6,7 @@ import Project from "./component/Project/Project";
 import Contact from "./component/Contact/Contact";
 import Footer from "./component/Footer/Footer";
 import BackTotopBtn from "./component/BackTotopBtn";
-import ParticlesComponent from "./config/ConfigTsparticles";
+import ParticlesComponent from "./component/config/ConfigTsparticles";
 import Skills from "./component/Skills/Skills";
 import "./App.css";
 

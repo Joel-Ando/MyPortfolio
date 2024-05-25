@@ -55,7 +55,7 @@ function Project() {
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{
-                delay: 0.8,
+                delay: 0.12,
                 y: { type: "spring", stiffness: 60 },
                 opacity: { duration: 0.2 },
                 ease: "easeIn",
@@ -74,7 +74,7 @@ function Project() {
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{
-                delay: 0.12,
+                delay: 0.18,
                 y: { type: "spring", stiffness: 60 },
                 opacity: { duration: 0.2 },
                 ease: "easeIn",
